@@ -1,0 +1,47 @@
+name: train
+description: A railway booking application.
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.2.2 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^0.1.2
+  curved_navigation_bar: ^0.3.1
+  after_layout: ^1.0.7+2
+  graphql_flutter: ^2.1.0
+  # cloud_firestore: ^0.12.9+4
+  # firebase_core: ^0.4.0+9
+  # firebase_analytics: ^5.0.2
+  # firebase_auth: ^0.14.0+5
+  flutter_svg: ^0.14.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/
+    - assets/players/
+    - assets/games/
+    - assets/shops/
+  #  - images/a_dot_ham.jpeg
+  # An image asset can refer to one or more resolution-specific "variants", see
+  fonts:
+    - family: Oxygen
+      fonts:
+        - asset: assets/fonts/Oxygen-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Oxygen-Light.ttf
+          weight: 400
+        - asset: assets/fonts/Oxygen-Regular.ttf
+          weight: 300
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
