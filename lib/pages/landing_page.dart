@@ -68,7 +68,7 @@ class _LandingPageState extends State<LandingPage>
             padding: const EdgeInsets.symmetric(horizontal: 5.0),
             child: FractionallySizedBox(
               alignment: Alignment.bottomCenter,
-              heightFactor: 1.06 - _heightFactorAnimation.value,
+              heightFactor: 1.09 - _heightFactorAnimation.value,
               child: ClipRRect(
                 borderRadius: BorderRadius.all(
                   Radius.circular(15),
@@ -84,7 +84,7 @@ class _LandingPageState extends State<LandingPage>
                           heading: "Latest News",
                         ),
                         Expanded(
-                          flex: 1,
+                          flex: 2,
                           child: SingleChildScrollView(
                             scrollDirection: Axis.horizontal,
                             child: Row(
@@ -105,7 +105,7 @@ class _LandingPageState extends State<LandingPage>
                             },
                             separatorBuilder: (context, index) {
                               return SizedBox(
-                                height: 20,
+                                height: 10,
                               );
                             },
                             itemCount: latestNewsList.length,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:train/custom/slider_info.dart';
+import 'package:train/models/latest.dart';
 import 'package:train/models/shops.dart';
 
 class LandingSlider extends StatefulWidget {
@@ -69,7 +70,7 @@ class _LandingSliderState extends State<LandingSlider>
   @override
   Widget build(BuildContext context) {
     return PageView.builder(
-      itemCount: shopList.length,
+      itemCount: latestNewsList.length,
       controller: widget._pageController,
       pageSnapping: true,
       onPageChanged: (index) {
@@ -85,7 +86,7 @@ class _LandingSliderState extends State<LandingSlider>
           fit: StackFit.expand,
           children: <Widget>[
             Image.asset(
-              shopList[index].imagePath,
+              latestNewsList[index].imagePath,
               fit: BoxFit.cover,
               height: double.infinity,
               width: double.infinity,
@@ -102,7 +103,7 @@ class _LandingSliderState extends State<LandingSlider>
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 24.0),
                 child: SliderInfo(
-                  shopList: shopList[currentIndex],
+                  shopList: latestNewsList[currentIndex],
                   slideAnimation: _slideAnimation,
                   fadeAnimation: _fadeAnimation,
                 ),

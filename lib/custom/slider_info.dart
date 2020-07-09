@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:train/models/shops.dart';
+import 'package:train/models/latest.dart';
 import 'package:train/styles/text_styles.dart';
 
 class SliderInfo extends StatelessWidget {
-  final Shops shopList;
+  final LatestNews shopList;
   final Animation slideAnimation, fadeAnimation;
   const SliderInfo(
       {Key key, this.shopList, this.slideAnimation, this.fadeAnimation})
